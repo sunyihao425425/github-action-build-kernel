@@ -34,7 +34,7 @@ jobs:
         cd $GITHUB_WORKSPACE
         git clone -b lineage-20 https://github.com/xiaomi-mt6853-devs/android_kernel_xiaomi_cannon.git
         cd android_kernel_xiaomi_cannon
-        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+        curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/v0.8.1/kernel/setup.sh" | bash -s v0.8.1
         echo "CONFIG_AUFS_FS=y" >>arch/arm64/configs/cannon_defconfig
         echo "CONFIG_BLK_CGROUP=y" >>arch/arm64/configs/cannon_defconfig
         echo "CONFIG_BLK_DEV_DM=y" >>arch/arm64/configs/cannon_defconfig
